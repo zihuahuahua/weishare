@@ -1,0 +1,72 @@
+.banner{
+    margin-top: 0.2rem;
+    width:3.73rem;
+    background: url(../images/case-bg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+.banner>div{
+    width: 3.45rem;
+    margin: 0 auto;
+    animation: bounceInUp 1s;
+}
+.banner h2{
+    font-size: 0.2rem;
+    font-weight: 100;
+    color: #fff;
+    padding-top: 1rem;
+}
+.banner>div>p{
+    font-size: 0.14rem;
+    color: #fff;
+    margin-top: 0.15rem;
+    padding-bottom: 0.2rem;
+}
+section{
+    text-align: center;
+}
+section>ul{
+    border-bottom: 1px solid #dddddd;
+}
+section>ul>li{
+    float: left;
+    line-height: 0.5rem;
+}
+section>ul>li>a{
+    display:block;
+    color:#333333;
+    font-size: 0.14rem;
+    padding:0 0.15rem;
+}
+section>ul>li>.active{
+    color:#fa8557;
+}
+section>ul>li>a:hover{
+    color: #56b6e7;
+}
+section>div:last-child{
+    text-align: center;
+    background-color: #fff;
+}
+section>div:last-child>ul{
+    margin: 0.2rem auto;
+    border-radius: 0.04rem;
+    width: 2.32rem;
+}
+section>div:last-child>ul>li{
+    float: left;
+    line-height: 0.32rem;
+    margin-top: 0.35rem;
+    border: 1px solid #ddd;
+}
+section>div:last-child>ul>li>a{
+    font-size: 0.14rem;
+    padding: 0 0.12rem;
+    margin-left: -0.01rem;
+    color: #337ab7;
+    display:block;
+}
+.exm{
+    background-color: #fff;
+}

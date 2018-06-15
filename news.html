@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+    <script>
+        //实时设置根目录的 font-size
+        //3.75   表示设计稿的宽度 / 100
+        document.documentElement.style.fontSize =document.documentElement.clientWidth / 3.75 + 'px';
+    </script>
+    <title>微享，随时随地分享新鲜事</title>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/news.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+</head>
+<body>
+<div class="warp">
+        <header>
+            <div class="top clearfix">
+                <h1><a href="#"></a></h1>
+                <a href="#"></a>
+            </div>
+            <div class="banner">
+                <div>
+                    <h2>新闻资讯</h2>
+                    <p>这里有最新的公司动态，这里有最新的网站设计、移动端设计、网页相关内容与你分享！</p>
+                </div>
+            </div>
+            </header>
+            <section>
+                <ul class="clearfix">
+                    <li><a href="#">最新资讯</a></li>
+                    <li><a href="#">网站动态</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                </ul>
+                <div class="clearfix">
+                    <div>
+                        <span>07</span>
+                        <p>2016-10</p>
+                        <p>广东澳新考拉</p>
+                    </div>
+                    <div>
+                        <h3>传统消费和互联网消费...</h3>
+                        <p>传统的实体经济在21世纪发生了巨大的变化，这一次的变化是互联网科...</p>
+                        <p>浏览次数：700</p>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div>
+                        <span>07</span>
+                        <p>2016-10</p>
+                        <p>广东澳新考拉</p>
+                    </div>
+                    <div>
+                        <h3>传统消费和互联网消费...</h3>
+                        <p>传统的实体经济在21世纪发生了巨大的变化，这一次的变化是互联网科...</p>
+                        <p>浏览次数：700</p>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div>
+                        <span>07</span>
+                        <p>2016-10</p>
+                        <p>广东澳新考拉</p>
+                    </div>
+                    <div>
+                        <h3>传统消费和互联网消费...</h3>
+                        <p>传统的实体经济在21世纪发生了巨大的变化，这一次的变化是互联网科...</p>
+                        <p>浏览次数：700</p>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div>
+                        <span>07</span>
+                        <p>2016-10</p>
+                        <p>广东澳新考拉</p>
+                    </div>
+                    <div>
+                        <h3>传统消费和互联网消费...</h3>
+                        <p>传统的实体经济在21世纪发生了巨大的变化，这一次的变化是互联网科...</p>
+                        <p>浏览次数：700</p>
+                    </div>
+                </div>
+                <div>
+                    <ul class="clearfix">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                </div>
+            </section>
+            <footer>
+                 <p>Copyright © 2003-2016  广州澳新考拉信息技术有限公司  All Rights Reserved　粤ICP备123456号　</p>
+                <p>Power by weshare</p>
+            </footer>
+</div>
+</body>
+<script>
+        function add(ele, str) {
+            let preClassName = ele.className
+            let arr = preClassName.split(/\s+/)
+            let ind = arr.indexOf(str)
+            if (ind === -1) {
+                ele.className = preClassName.trim() + ' ' + str
+            }
+        }
+        function remove(ele, str) {
+            let preClassName = ele.className
+            let arr = preClassName.split(/\s+/)
+            let ind = arr.indexOf(str)
+            if (ind !== -1) {
+                arr.splice(ind, 1)
+                ele.className = arr.join(' ')
+            }
+        }
+        document.querySelector('.top>a').onclick = function (event) {
+            event.preventDefault()
+            const list = document.querySelector('.menu')
+            switch(list.className){
+                case 'menu activeList':remove(list,'activeList');break;
+                default:add(list,'activeList');break;
+            }
+            
+        }
+    </script>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+    <script>
+        //实时设置根目录的 font-size
+        //3.75   表示设计稿的宽度 / 100
+        document.documentElement.style.fontSize =document.documentElement.clientWidth / 3.75 + 'px';
+    </script>
+    <title>微享，随时随地分享新鲜事</title>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/exm.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/eg.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+</head>
+<body>
+<div class="warp">
+        <header>
+            <div class="top clearfix">
+                <h1><a href="#"></a></h1>
+                <a href="#"></a>
+            </div>
+            <div class="banner">
+                <div>
+                    <h2>案例展示</h2>
+                    <p>力求视觉与交互的完美契合，以规范的流程和专注的态度，为您提供全方位的设计服务。</p>
+                </div>
+            </div>
+            </header>
+            <section>
+             <ul class="clearfix">
+                    <li><a href="#">全部</a></li>
+                    <li><a href="#">微官网</a></li>
+                </ul>
+               <div class="exm">
+                <div>
+                    <a href="">
+                        <img src="images/7.jpg" alt="" />
+                        <div>
+                            <p>福隆超市连锁</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="images/7a.jpg" alt="" />
+                        <div>
+                            <p>福隆超市连锁</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="images/8.jpg" alt="" />
+                        <div>
+                            <p>福隆超市连锁</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="images/12.jpg" alt="" />
+                        <div>
+                            <p>福隆超市连锁</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="images/12.jpg" alt="" />
+                        <div>
+                            <p>福隆超市连锁</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="images/8.jpg" alt="" />
+                        <div>
+                            <p>福隆超市连锁</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="images/7a.jpg" alt="" />
+                        <div>
+                            <p>福隆超市连锁</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="images/7.jpg" alt="" />
+                        <div>
+                            <p>福隆超市连锁</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="exm.html">查看更多</a>
+            </div>
+            <div>
+                <ul class="clearfix">
+                    <li><a href="#">«</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">»</a></li>
+                </ul>
+            </div>
+            </section>
+            <footer>
+                 <p>Copyright © 2003-2016  广州澳新考拉信息技术有限公司  All Rights Reserved　粤ICP备123456号　</p>
+                <p>Power by weshare</p>
+            </footer>
+</div>
+</body>
+<script>
+        function add(ele, str) {
+            let preClassName = ele.className
+            let arr = preClassName.split(/\s+/)
+            let ind = arr.indexOf(str)
+            if (ind === -1) {
+                ele.className = preClassName.trim() + ' ' + str
+            }
+        }
+        function remove(ele, str) {
+            let preClassName = ele.className
+            let arr = preClassName.split(/\s+/)
+            let ind = arr.indexOf(str)
+            if (ind !== -1) {
+                arr.splice(ind, 1)
+                ele.className = arr.join(' ')
+            }
+        }
+        document.querySelector('.top>a').onclick = function (event) {
+            event.preventDefault()
+            const list = document.querySelector('.menu')
+            switch(list.className){
+                case 'menu activeList':remove(list,'activeList');break;
+                default:add(list,'activeList');break;
+            }
+            
+        }
+    </script>
+</html>

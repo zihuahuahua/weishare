@@ -1,0 +1,105 @@
+html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, font, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-weight: inherit;
+        font-style: inherit;
+        font-size: 100%;
+        font-family: inherit;
+        vertical-align: baseline;
+    }
+    article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block;}
+    .clearfix:before,
+    .clearfix:after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                        visibility: hidden;
+                        line-height: 0;
+                        height: 0;
+                        font-size:0;
+}
+.clearfix { *zoom:1;}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.top{
+    width: 3.45rem;
+    margin:0 auto;
+    margin-top: 0.05rem;
+}
+h1{
+    float: left;
+}
+h1>a{
+    display:block;
+    background-image: url('../images/logo.png');
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    padding-top: 0.55rem;
+    width: 2.7rem;
+}
+.top>a{
+    display:block;
+    background: url('../images/list_03.png') no-repeat center center;
+    -webkit-background-size: 50%;
+    background-size: 50%;
+    width:0.42rem;
+    border-radius: 0.04rem;
+    border:1px solid #dddddd;
+    float: right;
+    padding-top:0.32rem;
+    margin-top:0.07rem ;
+}
+.banner{
+    margin: 0 auto;
+}
+.banner img{
+    width: 3.75rem;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.2rem;
+}
+.menu{
+    border-color: #e7e7e7;
+    margin:0 -0.15rem;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+.activeList{
+    height: 420px;
+}
+.menu>ul{
+    margin: 0 auto;
+    margin-top: 0.25rem;
+    width: 3.45rem;
+}
+.menu>ul>li{
+    line-height: 0.5rem;
+}
+.menu>ul>li>a{
+    display:block;
+    color: #555555;
+    font-size: 0.14rem;
+    padding:0 0.23rem;
+    border-radius: 0.05rem;
+}
+.menu>ul>li>.active,.menu>ul>li>a:hover{
+    color: #fff;
+    background-color: #fa8557;
+}
+
+

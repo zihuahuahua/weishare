@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+    <script>
+        //实时设置根目录的 font-size
+        //3.75   表示设计稿的宽度 / 100
+        document.documentElement.style.fontSize =document.documentElement.clientWidth / 3.75 + 'px';
+    </script>
+    <title>微享，随时随地分享新鲜事</title>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+</head>
+<body>
+    <div class="warp">
+        <header>
+            <div class="top clearfix">
+                <h1><a href="#"></a></h1>
+                <a href="#"></a>
+            </div>
+            <div class="banner">
+                <div>
+                    <h2>关于我们</h2>
+                    <p>永不畏惧创新，高端网站定制，标新立异来自微享您在网络领域超越同行者。</p>
+                </div>
+            </div>
+            </header>
+            <section>
+                <ul class="clearfix">
+                    <li><a class="active" href="#">关于我们</a></li>
+                    <li><a href="#">功能介绍</a></li>
+                    <li><a href="#">合作流程</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+                <img src="images/pic.jpg" alt="" />
+                <h3>微享，不只是朋友圈中的分享</h3>
+                <p>微享基于微信为用户提供开发、运营、培训、推广一体化解决方案，帮助用户搭建新一代微商分销体系，实现线上线下互通和客户沉淀。微享以直销模式+代理+熟人经济的模式帮助微商快速建立分销渠道，让粉丝主动传播和宣传产品。</p>
+                <div>
+                    <img src="images/a_03.jpg" alt="" />
+                    <h4>经验</h4>
+                    <p>拥有超过2年行业经验的资深团队及设计开发经验，服务上百家品牌企业。</p>
+                </div>
+                <div>
+                    <img src="images/a_05.jpg" alt="" />
+                    <h4>专业</h4>
+                    <p>我们整合商业思考，不断追求完美和卓越，渴望成为潮流的引领者。</p>
+                </div>
+                <div>
+                    <img src="images/a_07.jpg" alt="" />
+                    <h4>创新</h4>
+                    <p>我们摒弃墨守成规、腐朽不堪的设计理念和页面风格设计，希望能创造更多独特精彩的作品。</p>
+                </div>
+            </section>
+            <footer>
+                 <p>Copyright © 2003-2016  广州澳新考拉信息技术有限公司  All Rights Reserved　粤ICP备123456号　</p>
+                <p>Power by weshare</p>
+            </footer>
+
+    </div>
+
+</body>
+<script>
+        function add(ele, str) {
+            let preClassName = ele.className
+            let arr = preClassName.split(/\s+/)
+            let ind = arr.indexOf(str)
+            if (ind === -1) {
+                ele.className = preClassName.trim() + ' ' + str
+            }
+        }
+        function remove(ele, str) {
+            let preClassName = ele.className
+            let arr = preClassName.split(/\s+/)
+            let ind = arr.indexOf(str)
+            if (ind !== -1) {
+                arr.splice(ind, 1)
+                ele.className = arr.join(' ')
+            }
+        }
+        document.querySelector('.top>a').onclick = function (event) {
+            event.preventDefault()
+            const list = document.querySelector('.menu')
+            switch(list.className){
+                case 'menu activeList':remove(list,'activeList');break;
+                default:add(list,'activeList');break;
+            }
+            
+        }
+    </script>
+</html>

@@ -1,0 +1,78 @@
+.banner{
+    margin-top: 0.2rem;
+    width:3.73rem;
+    background: url(../images/about-bg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+.banner>div{
+    width: 3.45rem;
+    margin: 0 auto;
+    animation: bounceInUp 1s;
+}
+.banner h2{
+    font-size: 0.2rem;
+    font-weight: 100;
+    color: #fff;
+    padding-top: 1rem;
+
+}
+.banner>div>p{
+    font-size: 0.14rem;
+    color: #fff;
+    margin-top: 0.15rem;
+    padding-bottom: 0.2rem;
+}
+section{
+    width:3.45rem;
+    margin: 0 auto;
+    text-align: center;
+}
+section>ul>li{
+    float: left;
+    line-height: 0.5rem;
+}
+section>ul>li>a{
+    display:block;
+    color:#333333;
+    font-size: 0.14rem;
+    padding:0 0.15rem;
+}
+section>ul>li>.active{
+    color:#fa8557;
+}
+section>ul>li>a:hover{
+    color: #56b6e7;
+}
+section img{
+    width:3.45rem;
+    margin: 0 auto;
+    max-width: 100%;
+    display:block;
+}
+section h3{
+    font-size: 0.2rem;
+    color:#333333;
+    line-height: 1rem;
+}
+section>p{
+    font-size: 0.16rem;
+    text-indent: 24px;
+    line-height: 0.35rem;
+    text-align: left;
+    margin-bottom: 0.3rem;
+}
+section>div{
+    text-align: left;
+}
+h4{
+    line-height: 0.4rem;
+    font-size: 0.18rem;
+    color: #333333;
+}
+section>div>p{
+    color:#333333;
+    font-size: 0.14rem;
+    line-height: 0.22rem;
+}
